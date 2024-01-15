@@ -5,9 +5,9 @@ HTML, JS, SCSS
 
 ## Features:
 
-Adding new todo \
-Editing existing todo \
-Todos are not deleted immediately, they remain as "completed" for future viewing \
-Deleting todo forever \
-Statistics about an user's todos \
-Dark and light themes
+1. Adding new todo \
+2. Editing existing todo \
+3. Todos are not deleted immediately, they remain as "completed" for future viewing \
+4. Deleting todo forever \
+5. Statistics about an user's todos \
+6. Dark and light themes
