@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo</title>
+        <meta name="description" content="Organize and structure your life with this toDo list!">
+        <link rel="icon" type="x-icon" href="/src/images/favicon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/src/css/main.min.css">
+    </head>
+    <body>
+        <div class="blur-wrapper">
+            <div class="container">
+                <header class="header">
+                    <h1 class="header__logo">TODO</h1>
+
+                    <button class="theme-switch"></button>
+                </header>
+
+                <section class="task-writer">
+                    <button class="button button_add"></button>
+
+                    <input type="text" class="input" placeholder="Create a new todo..." aria-label="Create a new todo">
+                </section>
+
+                <main class="tasks">
+                    <div class="stack"></div>
+
+                    <div class="tasks__statistics"></div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

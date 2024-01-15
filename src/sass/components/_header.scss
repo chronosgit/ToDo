@@ -1,0 +1,13 @@
+.header {
+    padding-block-start: 3rem;
+    padding-block-end: min(3rem, 48px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        color: var(--clr-white);
+        font-weight: var(--fw-regular);
+        letter-spacing: 0.6rem;
+    }
+}

@@ -1,0 +1,13 @@
+.task-writer {
+    padding: clamp(8px, 0.5rem, 12px) clamp(16px, 1rem, 24px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: min(0.5rem, 8px);
+    border-radius: min(8px, 0.5rem);
+    background-color: var(--clr-bg);
+
+    & .input {
+        flex-grow: 2;
+    }
+}

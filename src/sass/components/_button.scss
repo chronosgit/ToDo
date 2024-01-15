@@ -1,0 +1,23 @@
+.button {
+    width: max(2rem, 32px);
+    height: max(2rem, 32px);
+    border-radius: 50%;
+    border: 1px solid var(--clr-main);
+    background: none;
+
+    &_add {
+        &::before {
+            content: "+";
+            font-size: max(1.5rem, 24px);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover, 
+    &:focus {
+        background-color: var(--clr-gray);
+    }
+}
