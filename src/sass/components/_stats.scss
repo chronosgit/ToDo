@@ -3,6 +3,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border-radius: 0.5rem;
+    font-size: clamp(8px, 1rem, 20px);
+    box-shadow: 0 0 0.5rem black;
     color: var(--clr-bg);
 
     &__filters {
@@ -10,11 +13,12 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        font-size: inherit;
     }
 
     &__filter,
     &__clear {
-        font-size: 1rem;
+        font-size: inherit;
         font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
         background-color: var(--clr-bg);
     }

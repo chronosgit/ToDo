@@ -5,8 +5,7 @@
     border: 1px solid var(--clr-main);
     background: none;
 
-    &:hover, 
-    &:focus {
+    &:hover {
         cursor: pointer;
         background-color: var(--clr-main);
     }
@@ -17,9 +16,16 @@
             font-size: max(1.5rem, 24px);
         }
 
-        &:hover, 
-        &:focus {
+        &:hover {
             background-color: var(--clr-success);
+        }
+    }
+
+    &_checked {
+        background-color: var(--clr-main);
+        
+        &:hover {
+            background-color: var(--clr-bg);
         }
     }
 }
