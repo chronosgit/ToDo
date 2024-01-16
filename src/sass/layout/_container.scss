@@ -1,5 +1,25 @@
 .container {
     margin-inline: auto;
-    width: clamp(min(20rem, 320px), min(35rem + 10vw, 560px + 10vw), min(45rem, 720px));
     width: min(min(35rem + 10vw, 560px + 10vw), min(45rem, 720px));
+    padding: 1rem;
+
+    @media (max-width: 710px) {
+        width: min(max(40rem, 640px), 640px);
+    }
+
+    @media (max-width: 650px) {
+        width: min(max(35rem, 560px), 560px);
+    }
+
+    @media (max-width: 610px) {
+        width: min(max(30rem, 480px), 480px);
+    }
+
+    @media (max-width: 490px) {
+        width: min(max(25rem, 400px), 400px);
+    }
+
+    @media (max-width: 410px) {
+        width: min(max(20rem, 320px), 320px);
+    }
 }

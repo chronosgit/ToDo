@@ -9,5 +9,9 @@
         color: var(--clr-white);
         font-weight: var(--fw-regular);
         letter-spacing: 0.6rem;
+
+        @media (max-width: 320px) {
+            font-size: 1.5rem;
+        }
     }
 }

@@ -1,5 +1,7 @@
 .input {
     padding: min(1rem, 16px);
     font-size: 1rem;
+    font-family: inherit;
     background-color: var(--clr-bg);
+    box-sizing: border-box;
 }
