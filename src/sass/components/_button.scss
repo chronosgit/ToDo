@@ -1,6 +1,6 @@
 .button {
-    width: max(2rem, 32px);
-    height: max(2rem, 32px);
+    min-width: max(2rem, 32px);
+    min-height: max(2rem, 32px);
     border-radius: 50%;
     border: 1px solid var(--clr-main);
     background: none;
