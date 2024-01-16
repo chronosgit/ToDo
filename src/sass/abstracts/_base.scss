@@ -10,6 +10,7 @@ html {
     margin: 0;
     padding: 0;
     color: var(--clr-main);
+    outline-color: var(--clr-action);
     border: 0;
 }
 
@@ -25,5 +26,5 @@ body {
     height: 100vh;
     background-image: url("/src/images/bg.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }

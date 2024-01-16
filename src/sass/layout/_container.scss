@@ -1,4 +1,5 @@
 .container {
     margin-inline: auto;
-    width: clamp(min(35rem, 560px), min(35rem + 10vw, 560px + 10vw), min(45rem, 720px));
+    width: clamp(min(20rem, 320px), min(35rem + 10vw, 560px + 10vw), min(45rem, 720px));
+    width: min(min(35rem + 10vw, 560px + 10vw), min(45rem, 720px));
 }
