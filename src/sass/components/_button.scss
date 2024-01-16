@@ -5,19 +5,21 @@
     border: 1px solid var(--clr-main);
     background: none;
 
+    &:hover, 
+    &:focus {
+        cursor: pointer;
+        background-color: var(--clr-main);
+    }
+
     &_add {
         &::before {
             content: "+";
             font-size: max(1.5rem, 24px);
         }
-    }
 
-    &:hover {
-        cursor: pointer;
-    }
-
-    &:hover, 
-    &:focus {
-        background-color: var(--clr-gray);
+        &:hover, 
+        &:focus {
+            background-color: var(--clr-success);
+        }
     }
 }

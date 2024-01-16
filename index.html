@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ToDo</title>
         <meta name="description" content="Organize and structure your life with this toDo list!">
-        <link rel="icon" type="x-icon" href="/src/images/favicon.svg">
+        <link rel="icon" type="x-icon" href="./src/images/favicon.svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/src/css/main.min.css">
+        <link rel="stylesheet" href="./src/css/main.min.css">
     </head>
     <body>
         <div class="blur-wrapper">
@@ -17,7 +17,7 @@
                 <header class="header">
                     <h1 class="header__logo">TODO</h1>
 
-                    <button class="theme-switch"></button>
+                    <button class="theme-switch theme-switch_dark"></button>
                 </header>
 
                 <section class="task-writer">
@@ -42,27 +42,18 @@
                         <p class="task__name">Meditation</p>
                     </div>
 
-                    <div class="task">
-                        <button class="button"></button>
-                        <p class="task__name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt laborum excepturi sed! Eos libero ducimus tenetur amet non cupiditate, eveniet neque commodi quam, atque ea. Nobis perspiciatis odio quis.
-                        Tenetur dolorem similique beatae ex voluptatem doloribus. Voluptate, modi esse. Quaerat quo nesciunt ratione quos? Nihil nobis quas, fuga vitae ipsam hic tempore similique aspernatur ab dignissimos? Quod, voluptates adipisci!
-                        Aliquam veritatis similique enim itaque molestias ab, consequatur facere voluptas maxime tempora saepe, unde quidem. Possimus, facilis ullam temporibus voluptate aperiam est, minima officia laudantium numquam itaque tempora hic sunt.
-                        Natus amet, perspiciatis sequi sed esse numquam laborum eaque obcaecati quibusdam deserunt voluptas cumque ducimus nemo odio, doloribus officia quo possimus recusandae. Qui asperiores unde iure, dolore officia impedit molestias.
-                        Voluptatum, non? Minima rerum laboriosam iure a, quaerat autem at aspernatur delectus? Tempora mollitia optio omnis natus animi recusandae, vitae illo nam voluptate hic, reiciendis cupiditate, accusamus alias consectetur architecto!</p>
-                    </div>
-
                     <div class="stats">
                         <p class="stats__quantity">4 items left</p>
                     
                         <div class="stats__filters">
-                            <p class="stats__filter">All</p>
-
-                            <p class="stats__filter">Active</p>
-
-                            <p class="stats__filter">Completed</p>
+                            <button class="stats__filter active">All</button>
+    
+                            <button class="stats__filter">Active</button>
+    
+                            <button class="stats__filter">Completed</button>
                         </div>
-
-                        <p class="stats_clear">Clear Completed</p>
+    
+                        <button class="stats__clear" data-text>Clear Completed</button>
                     </div>
                 </main>
             </div>

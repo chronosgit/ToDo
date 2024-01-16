@@ -1,0 +1,39 @@
+.stats {
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-bg);
+
+    &__filters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &__filter,
+    &__clear {
+        font-size: 1rem;
+        font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+        background-color: var(--clr-bg);
+    }
+
+    &__filter {
+        &:hover,
+        &:focus-visible {
+            cursor: pointer;
+            color: var(--clr-action);
+        }
+    }
+
+    &__clear {
+        color: var(--clr-danger);
+
+        &:hover,
+        &:focus-visible {
+            cursor: pointer;
+            text-shadow: 0px 0px 1px var(--clr-danger);
+        }
+    }
+}
