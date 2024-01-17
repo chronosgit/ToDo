@@ -16,4 +16,24 @@
 
     --clr-bg: var(--clr-white); // light theme
     --clr-main: var(--clr-black);
+
+    --icon-moon-url: url("/src/images/moon.svg");
+    --icon-sun-url: url("/src/images/sun.png");
+
+    --theme-switch-icon-main: var(--icon-sun-url);
+    --theme-switch-icon-alternative: var(--icon-moon-url);
+
+    @media (prefers-color-scheme: dark) {
+        --clr-main: var(--clr-white);
+        --clr-bg: var(--clr-black);
+        --theme-switch-icon-main: var(--icon-moon-url);
+        --theme-switch-icon-alternative: var(--icon-sun-url);
+    }
+
+    @media (prefers-color-scheme: light) {
+        --clr-main: var(--clr-black);
+        --clr-bg: var(--clr-white);
+        --theme-switch-icon-main: var(--icon-sun-url);
+        --theme-switch-icon-alternative: var(--icon-moon-url);
+    }
 }

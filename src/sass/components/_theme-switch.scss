@@ -6,29 +6,15 @@
 
 .theme-switch {
     @include circle;
+
+    background-image: var(--theme-switch-icon-main);
+    background-size: cover;
+    background-position: center;
     transition: all 0.3s ease;
 
-    &_dark {
-        background-image: url("/src/images/moon.svg");
-        background-size: cover;
-        background-position: center;
-
-        &:hover,
-        &:focus-visible {
-            cursor: pointer;
-            background-image: url("/src/images/sun.png");      
-        }
-    }
-
-    &_light {
-        background-image: url("/src/images/sun.png");
-        background-size: cover;
-        background-position: center;
-
-        &:hover,
-        &:focus-visible {
-            cursor: pointer;
-            background-image: url("/src/images/moon.svg");      
-        }
+    &:hover,
+    &:focus-visible {
+        cursor: pointer;
+        background-image: var(--theme-switch-icon-alternative);      
     }
 }

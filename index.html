@@ -17,29 +17,19 @@
                 <header class="header">
                     <h1 class="header__logo">TODO</h1>
 
-                    <button class="theme-switch theme-switch_dark"></button>
+                    <button class="theme-switch"></button>
                 </header>
 
-                <section class="task-writer">
+                <section class="task-writer theme">
                     <button class="button button_add"></button>
 
-                    <input type="text" class="input" placeholder="Create a new todo..." aria-label="Create a new todo">
+                    <input name="task-name" type="text" class="input" placeholder="Create a new todo..." aria-label="Create a new todo">
                 </section>
 
-                <main class="tasks theme">
-                    <div class="task">
-                        <button class="button button_checked"></button>
-                        <p class="task__name">Complete Javascript</p>
-                    </div>
-
-                    <div class="task">
-                        <button class="button button"></button>
-                        <p class="task__name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, vel ipsa dolorem cum explicabo atque. Culpa neque excepturi reprehenderit consectetur incidunt? Distinctio, assumenda nam est repellendus at in commodi sapiente!</p>
-                    </div>
-                </main>
+                <main class="tasks theme"></main>
 
                 <section class="stats theme">
-                    <p class="stats__quantity">0 items left</p>
+                    <p class="stats__quantity">No tasks</p>
                 
                     <div class="stats__filters">
                         <button class="stats__filter active">All</button>
@@ -49,9 +39,11 @@
                         <button class="stats__filter">Completed</button>
                     </div>
 
-                    <button class="stats__clear" data-text>Clear Completed</button>
+                    <button class="stats__clear">Clear Completed</button>
                 </section>
             </div>
         </div>
+
+        <script type="module" src="./src/js/app.js"></script>
     </body>
 </html>
