@@ -21,6 +21,18 @@
         }
     }
 
+    &_edit {
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        background-color: var(--clr-action);
+        color: var(--clr-black);
+        
+        &:hover,
+        *:focus-visible {
+            background-color: var(--clr-action-dark);
+        }
+    }
+
     &_checked {
         background-color: var(--clr-main);
         

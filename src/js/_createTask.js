@@ -1,4 +1,5 @@
 import deleteTask from "./_deleteTask.js";
+import openEditBox from "./_openEditBox.js";
 
 const tasksBox = document.querySelector(".tasks");
 const taskCreationButton = document.querySelector(".button_add");
@@ -23,6 +24,8 @@ const createTaskManageButtons = () => {
     taskEditIcon.src = "/src/images/pen.png";
     taskEditIcon.classList.add("task__icon");
     taskEditButton.append(taskEditIcon);
+
+    taskEditButton.onclick = openEditBox;
 
     const taskManageBox = document.createElement("div");
     taskManageBox.classList.add("task__manage");

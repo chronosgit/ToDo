@@ -8,6 +8,13 @@ const deleteTask = (e) => {
 
     const task = taskIconBox.parentElement.parentElement;
 
+    const taskEditorInput = document.querySelector("#task-editor__input");
+    if(taskEditorInput.getAttribute("name") === task.getAttribute("name")) {
+        taskEditorInput.value = "";
+        taskEditorInput.setAttribute("name", "");
+        taskEditorInput.parentElement.classList.add("hidden");
+    }
+
     taskIconBox.remove();
     task.remove();
     delete tasks[task.getAttribute("name")];

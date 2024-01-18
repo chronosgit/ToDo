@@ -1,3 +1,5 @@
+import editTask from "./_editTask.js";
+
 const root = document.querySelector(":root");
 
 const globalListener = window.addEventListener("DOMContentLoaded", (e) => {
@@ -11,6 +13,14 @@ const globalListener = window.addEventListener("DOMContentLoaded", (e) => {
 
         root.style.setProperty("--clr-bg", colorBlack);
         root.style.setProperty("--clr-main", colorWhite);
+    }
+
+    const taskEditButton = document.querySelector(".button_edit");
+    taskEditButton.onclick = editTask;
+
+    const taskEditInput = document.querySelector("#task-editor__input");
+    taskEditInput.onkeydown = (e) => {
+        if(e.keyCode === 13) editTask(e);
     }
 });
 

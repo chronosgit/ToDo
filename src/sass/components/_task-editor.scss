@@ -1,0 +1,15 @@
+.task-editor {
+    max-block-size: min(max(25rem, 400px), 400px);
+    margin-block-end: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem black;
+
+    & > input {
+        flex-grow: 2;
+    }
+}
