@@ -5,16 +5,16 @@
 
     --clr-white: #dbdada;
     --clr-gray: #dddddd;
+    --clr-white-dark: #c4c4c4;
     --clr-yellow: #ffdc19;
     --clr-black: #1d1b1b;
+    --clr-black-light: #757575;
     --clr-success: #3ddf4a;
     --clr-danger: #f0522b;
     --clr-action: #3db7f0;
 
-    // --clr-bg: var(--clr-black); // dark theme
-    // --clr-main: var(--clr-white);
-
     --clr-bg: var(--clr-white); // light theme
+    --clr-bg-hover: var(--clr-white-dark);
     --clr-main: var(--clr-black);
 
     --icon-moon-url: url("/src/images/moon.svg");
@@ -26,6 +26,7 @@
     @media (prefers-color-scheme: dark) {
         --clr-main: var(--clr-white);
         --clr-bg: var(--clr-black);
+        --clr-bg-hover: var(--clr-black-light);
         --theme-switch-icon-main: var(--icon-moon-url);
         --theme-switch-icon-alternative: var(--icon-sun-url);
     }
@@ -33,6 +34,7 @@
     @media (prefers-color-scheme: light) {
         --clr-main: var(--clr-black);
         --clr-bg: var(--clr-white);
+        --clr-bg-hover: var(--clr-white-dark);
         --theme-switch-icon-main: var(--icon-sun-url);
         --theme-switch-icon-alternative: var(--icon-moon-url);
     }
