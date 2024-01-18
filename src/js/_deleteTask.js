@@ -15,7 +15,12 @@ const deleteTask = (e) => {
         taskEditorInput.parentElement.classList.add("hidden");
     }
 
-    taskIconBox.remove();
+    const taskManageBox = taskIconBox.parentElement;
+    taskManageBox.firstChild.remove();
+    taskManageBox.firstChild.remove();
+    
+    const taskMainBox = taskManageBox.previousElementSibling;
+    taskMainBox.remove(); 
     task.remove();
     delete tasks[task.getAttribute("name")];
 

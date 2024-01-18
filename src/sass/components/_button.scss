@@ -39,5 +39,9 @@
         &:hover {
             background-color: var(--clr-bg);
         }
+
+        & + p {
+            text-decoration: line-through;
+        }
     }
 }

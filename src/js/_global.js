@@ -1,4 +1,5 @@
 import editTask from "./_editTask.js";
+import filterTasks from "./_filterTasks.js";
 
 const root = document.querySelector(":root");
 
@@ -21,6 +22,11 @@ const globalListener = window.addEventListener("DOMContentLoaded", (e) => {
     const taskEditInput = document.querySelector("#task-editor__input");
     taskEditInput.onkeydown = (e) => {
         if(e.keyCode === 13) editTask(e);
+    }
+
+    const filterButtons = document.querySelectorAll(".stats__filter");
+    for(let filterButton of filterButtons) {
+        filterButton.onclick = filterTasks;
     }
 });
 

@@ -31,18 +31,18 @@
                 <section class="task-editor theme hidden">
                     <input id="task-editor__input" name="task-name-new" type="text" class="input" placeholder="New task name">
 
-                    <button class="button button_edit border-reset" onclick="editTask()">Edit</button>
+                    <button class="button button_edit border-reset">Edit</button>
                 </section>
 
                 <section class="stats theme">
                     <p class="stats__quantity">No tasks</p>
                 
                     <div class="stats__filters">
-                        <button class="stats__filter active">All</button>
+                        <button id="filter-all" class="stats__filter active">All</button>
 
-                        <button class="stats__filter">Active</button>
+                        <button id="filter-active" class="stats__filter">Active</button>
 
-                        <button class="stats__filter">Completed</button>
+                        <button id="filter-completed" class="stats__filter">Completed</button>
                     </div>
 
                     <button class="stats__clear">Clear Completed</button>

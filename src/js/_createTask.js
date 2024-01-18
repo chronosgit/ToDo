@@ -1,3 +1,4 @@
+import completeTask from "./_completeTask.js";
 import deleteTask from "./_deleteTask.js";
 import openEditBox from "./_openEditBox.js";
 
@@ -35,6 +36,23 @@ const createTaskManageButtons = () => {
     return taskManageBox;
 }
 
+const createTaskMainBox = (inputText) => {
+    const taskAddButton = document.createElement("button");
+    taskAddButton.classList.add("button");
+
+    const taskTextNode = document.createTextNode(inputText);
+    const taskName = document.createElement("p");
+    taskName.append(taskTextNode);
+    taskName.classList.add("task__name");
+
+    const taskMainBox = document.createElement("div");
+    taskMainBox.classList.add("task__main");
+    taskMainBox.append(taskAddButton, taskName);
+    taskMainBox.onclick = completeTask;
+
+    return taskMainBox;
+}
+
 const createTask = (e) => {
     const inputText = taskCreationInput.value;
 
@@ -46,25 +64,15 @@ const createTask = (e) => {
     const taskDiv = document.createElement("div");
     taskDiv.classList.add("task");
 
-    const taskAddButton = document.createElement("button");
-    taskAddButton.classList.add("button");
-
-    const taskTextNode = document.createTextNode(inputText);
-    const taskName = document.createElement("p");
-    taskName.append(taskTextNode);
-    taskName.classList.add("task__name");
-
-    const taskMain = document.createElement("div");
-    taskMain.classList.add("task__main");
-    taskMain.append(taskAddButton, taskName);
-
+    const taskMainBox = createTaskMainBox(inputText);
     const taskManageBox = createTaskManageButtons();
 
     const taskId = "id" + Math.random().toString(16).slice(2);
     taskDiv.setAttribute("name", taskId);
-    taskDiv.append(taskMain, taskManageBox);
+    taskDiv.append(taskMainBox, taskManageBox);
     tasksBox.append(taskDiv);
     tasks[taskId] = {
+        id: taskId,
         name: inputText,
         completed: false,
     };
@@ -83,8 +91,12 @@ const createTask = (e) => {
     taskCreationInput.value = "";
 }
 
-const clearTasks = () => {
-    tasks = {};
+const clearCompletedTasks = () => {
+    for(let taskId in tasks) {
+        if(tasks[taskId].completed) {
+            delete tasks[taskId];
+        }
+    }
 }
 
 const taskCreationListener = taskCreationButton.addEventListener("click", createTask);
@@ -96,4 +108,4 @@ taskCreationInput.onkeydown = (e) => {
 
 
 export default taskCreationListener;
-export { clearTasks, tasks };
+export { clearCompletedTasks, createTaskManageButtons, createTaskMainBox, tasks };
